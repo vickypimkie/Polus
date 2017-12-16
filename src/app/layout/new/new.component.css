@@ -1,6 +1,5 @@
 img {
     width: 100vw;
-    height: 100vh;
     z-index: -1;
 }
 button {
@@ -40,16 +39,16 @@ button:focus {
     position: absolute;
     display: block;
     left: 50%;
-    width: 60vw;
+    width: 45vw;
     height: 40vh;
-    margin-left: -30vw;
+    margin-left: -20vw;
     top: 50%;
-    margin-top: -17vh;
+    margin-top: -21vh;
     z-index: 2;
     color: white;
 }
 .heading {
-    font-family: 'Marck Script', cursive;
+    font-family: 'Montserrat', sans-serif;
     font-size: 50px;
     text-align: center;
 }

@@ -1,0 +1,16 @@
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    margin-left: 10px;
+    color: #b1b1b1;
+    font-size: 20px;
+}
+
+li:hover, li:active {
+    color: #000000; 
+}
+

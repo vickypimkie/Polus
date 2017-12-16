@@ -23,7 +23,6 @@ const appRoutes: Routes = [
   { path: 'new', component: NewComponent },
   { path: 'home', component: HomeComponent },
   { path: '**', component: NotFoundPageComponent },
-
  ];
 
 @NgModule({
@@ -36,7 +35,7 @@ const appRoutes: Routes = [
     HomeComponent,
     NotFoundPageComponent,
     BasketComponent,
-    ContactComponent,
+    ContactComponent
 ],
   imports: [
     BrowserModule,

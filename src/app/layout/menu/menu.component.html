@@ -1,9 +1,14 @@
-<div class="card" style="width: 20rem;">
-    <img class="card-img-top" src="app/img/ice.jpg" alt="Card image cap">
-    <div class="card-body">
-        <h4 class="card-title">Ice cream</h4>
-        <p class="card-text"> Клубничное мороженное </p>
-        <a href="#" class="btn btn-primary"> Купить </a>
-      </div>
-</div>
+<ul>
+    <li *ngFor="let menu of menus" (click)="showPart(menu)">
+        {{ menu.name }}     
+    </li>
+</ul>
+<div >
+        <ul>
+            <li *ngFor="let menuItem of items">
+                {{menuItem.name}}
+            </li>
+        </ul>
+
+    </div>
 
