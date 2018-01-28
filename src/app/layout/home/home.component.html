@@ -1,32 +1,17 @@
-<div class="content">
-        <p class="heading"> Любишь вкусное мороженое?</p>
-        <p class="heading"> Приходи к нам! </p>
-        <div class="info">
-          <p> пл.Свободы 23А </p>
-          <p> +38 (096) 51 74 823 </p>
-          <p> Ежедневно : с 8:00 до 22:00  </p>
-        </div>
-    </div>
-    
-    <ngx-carousel class='carousel'
-    [inputs]="carouselOne"
-    (carouselLoad)="myfunc($event)">
-      <ngx-item NgxCarouselItem>
-        <img src='app/img/ice1.jpg'>
-      </ngx-item>
-      <ngx-item NgxCarouselItem>
-        <img src='app/img/ice2.jpg'>
-      </ngx-item>
-      <ngx-item NgxCarouselItem>
-        <img src='app/img/ice3.jpg'>
-      </ngx-item>
-    
-      <button NgxCarouselPrev class='leftRs' > 
-      </button>
-    
-      <button NgxCarouselNext class='rightRs' >
-      </button>
-    
-    </ngx-carousel>
-    
-    
+<div id="main">
+  
+  <img src="app/img/bg.png" alt="logo_polus" id="bg">
+
+  <div id="logo">
+    <img src="app/img/logo.png" alt="logo_polus" routerLink="/home">
+  </div>
+
+  <menu>
+      <a routerLink="/about"> О НАС </a>
+      <a routerLink="/menu"> МЕНЮ </a>
+      <a routerLink="/gallery"> ГАЛЕРЕЯ </a>
+      <a routerLink="/reserv"> БРОНИРОВАНИЕ </a>
+      <a routerLink="/contact"> КОНТАКТЫ </a>
+  </menu>
+  
+</div>

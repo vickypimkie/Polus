@@ -1,0 +1,74 @@
+h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+    color: #e40082;
+    text-align: center;
+}
+#about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+#about img {
+    width: 55%;
+    height: 55%;
+}
+#about img:hover {
+    opacity: 0.7;
+}
+#text {
+    width: 40%;
+}
+#text p {
+    font-family: 'Roboto Condensed', sans-serif; 
+    font-size: 18px;
+    text-align: justify;
+    text-indent: 20px;
+}
+@keyframes icon {
+    0%   {margin-left:58%; margin-top:-20%; transform: rotate(35deg); filter: brightness(8) invert(40)}
+    50%  {margin-left:65%; margin-top:-18%; transform: rotate(50deg); opacity: 0.2; filter: brightness(5) invert(80)}
+    75%  {margin-left:55%; margin-top:-18%; transform: rotate(80deg); filter: brightness(10) invert(180)}
+    100% {margin-left:58%; margin-top:-20%; transform: rotate(50deg); filter: brightness(20) invert(20)}
+}
+@keyframes icon2 {
+    0%   {margin-left:85%; margin-top:-45%; transform: rotate(15deg);}
+    15%  {margin-left:80%; margin-top:-40%; transform: rotate(25deg);}
+    50%  {margin-left:90%; margin-top:-35%; transform: rotate(30deg); opacity: 0.3}
+    100% {margin-left:85%; margin-top:-45%; transform: rotate(20deg);}
+}
+#icon1 {
+    width: 10%;
+    height: 5%;
+    z-index: 2;
+
+    position: relative;
+    animation-name: icon;
+    animation-duration: 3s;
+    animation-iteration-count: 15;
+    animation-direction: alternate;
+
+    margin-left: 58%;
+    margin-top: -20%;
+}
+#icon1:hover {
+    opacity: 0.7;
+}
+#icon2 {
+    width: 10%;
+    height: 5%;
+    z-index: 2;
+    margin-left: 85%;
+    margin-top: -45%;
+
+    position: relative;
+    animation-name: icon2;
+    animation-duration: 3s;
+    animation-iteration-count: 8;
+    animation-direction: alternate;
+}
+#icon2:hover {
+    opacity: 0.7;
+}

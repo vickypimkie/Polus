@@ -1,14 +1,15 @@
-<ul>
-    <li *ngFor="let menu of menus" (click)="showPart(menu)">
-        {{ menu.name }}     
-    </li>
-</ul>
-<div >
-        <ul>
-            <li *ngFor="let menuItem of items">
-                {{menuItem.name}}
-            </li>
-        </ul>
+<h1 routerLink="/menu"> МЕНЮ </h1>
 
+<div id="menu">
+    <ul>
+        <li *ngFor="let menu of menus" (click)="showPart(menu)">
+            <p id="menuname">{{menu.name}}</p>  
+        </li>
+    </ul>
+</div>   
+
+<div id="second">
+    <div *ngFor="let menuItem of items" id="circle">
+        <img src="app/img/{{menuItem.note}}" > 
     </div>
-
+</div>
